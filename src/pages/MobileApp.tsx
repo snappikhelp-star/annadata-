@@ -44,7 +44,7 @@ const PRODUCTS = [
   { id: 2, name: "PB1 धान बीज", nameEn: "PB1 Dhan Seed", category: "Seeds", crop: "Dhan", emoji: "🌾", badge: "HOT", badgeColor: "#ef4444", desc: "लोकप्रिय किस्म • अधिक उपज", price: "₹ On Request" },
   { id: 3, name: "JS-335 सोयाबीन", nameEn: "JS-335 Soyabean", category: "Seeds", crop: "Soyabean", emoji: "🌿", badge: "HOT", badgeColor: "#f59e0b", desc: "प्रमाणित बीज • जल्दी अंकुरण", price: "₹ On Request" },
   { id: 4, name: "JS-9305 सोयाबीन", nameEn: "JS-9305 Soyabean", category: "Seeds", crop: "Soyabean", emoji: "🌿", badge: null, badgeColor: "", desc: "NRC-86 • RKS-45 भी उपलब्ध", price: "₹ On Request" },
-  { id: 5, name: "गेहूं बीज (रबी)", nameEn: "Wheat Seed (Rabi)", category: "Seeds", crop: "Gehu", emoji: "🌻", badge: null, badgeColor: "", desc: "प्रमाणित किस्म • सभी वेराइटी", price: "₹ On Request" },
+  { id: 5, name: "गेहूं बीज (रबी)", nameEn: "Wheat Seed (Rabi)", category: "Seeds", crop: "Gehu", emoji: "🌾", badge: null, badgeColor: "", desc: "प्रमाणित किस्म • सभी वेराइटी", price: "₹ On Request" },
   { id: 6, name: "चना बीज", nameEn: "Chana Seed", category: "Seeds", crop: "Chana", emoji: "🫘", badge: null, badgeColor: "", desc: "JG-14 • Vikas — देसी व काबुली चना", price: "₹ On Request" },
 ];
 
@@ -314,13 +314,14 @@ function HomeTab({ onTabChange }: { onTabChange: (t: Tab) => void }) {
             </div>
 
             {/* Right image */}
-            <div className="w-[115px] flex-shrink-0 relative">
-              <img
-                src={shopImg2}
-                alt="Annadata Agri Shop"
-                className="w-full h-full object-cover"
-                style={{ minHeight: 230 }}
-              />
+        div className="w-[160px] flex-shrink-0 relative">
+  <img
+    src={shopImg2}
+    alt="Annadata Agri Shop"
+    className="w-full h-full object-cover"
+    style={{ minHeight: 300 }}
+  />
+</div>
               <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent pointer-events-none" />
               {/* Season tag */}
               <motion.div
@@ -443,7 +444,7 @@ function HomeTab({ onTabChange }: { onTabChange: (t: Tab) => void }) {
             {[
               { name: "धान", nameEn: "Dhan", emoji: "🌾", desc: "1886 • PB1 • बासमती • हाइब्रिड", color: "#22c55e", badge: "खरीफ 2026", hot: true },
               { name: "सोयाबीन", nameEn: "Soyabean", emoji: "🌿", desc: "JS-335 • JS-9305 • NRC-86", color: "#84cc16", badge: "खरीफ HOT", hot: true },
-              { name: "गेहूं", nameEn: "Gehu", emoji: "🌻", desc: "सभी प्रमाणित किस्में उपलब्ध", color: "#f59e0b", badge: "रबी सीजन", hot: false },
+              { name: "गेहूं", nameEn: "Gehu", emoji: "🌾", desc: "सभी प्रमाणित किस्में उपलब्ध", color: "#f59e0b", badge: "रबी सीजन", hot: false },
               { name: "चना", nameEn: "Chana", emoji: "🫘", desc: "JG-14 • Vikas — देसी व काबुली चना", color: "#fb923c", badge: "रबी सीजन", hot: false },
             ].map((crop, i) => (
               <motion.button key={crop.name}
@@ -490,7 +491,7 @@ function HomeTab({ onTabChange }: { onTabChange: (t: Tab) => void }) {
               { label: "धान", emoji: "🌾", color: "#22c55e" },
               { label: "सोयाबीन", emoji: "🌿", color: "#84cc16" },
               { label: "चना", emoji: "🫘", color: "#fb923c" },
-              { label: "गेहूं", emoji: "🌻", color: "#f59e0b" },
+              { label: "गेहूं", emoji: "🌾", color: "#f59e0b" },
             ].map((cat, i) => (
               <motion.button key={cat.label}
                 initial={{ opacity: 0, y: 8 }}
