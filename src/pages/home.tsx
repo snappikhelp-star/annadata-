@@ -7,7 +7,7 @@ export default function App() {
       <div className="relative text-center max-w-5xl mx-auto">
         
         <div className="text-7xl md:text-8xl mb-6 animate-bounce">
-          🌾
+          🌱
         </div>
 
         <h1 className="text-5xl md:text-8xl font-black text-white tracking-wide">
